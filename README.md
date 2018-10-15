@@ -18,4 +18,4 @@ The following environment variables are supported:
 
 ## Building the docker image
 
-`docker build -t .` 
+`docker build .` 
