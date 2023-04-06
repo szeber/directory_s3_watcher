@@ -5,7 +5,7 @@ ADD ./src /go/src/app
 
 RUN mkdir /app && \
     cd /go/src/app && \
-    go get -v -d && \
+    go mod download && \
     CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o directory_s3_watcher directory_s3_watcher.go
 
 # final stage
